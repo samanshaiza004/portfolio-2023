@@ -1,10 +1,20 @@
 ---
-
+import Social from "./Social.astro";
 ---
 <footer class="text-center mt-auto py-4">
-    <small>Copyright &copy; <span id="copyright"></span> | All rights reserved</small>
+    <div class="lg:flex w-full gap-5">
+        <small class="lg:w-[550px] mt-1">
+            Copyright &copy; <span id="copyright"></span> | All rights reserved
+        </small>
+        <div class="relative float-right w-full">
+            <Social platform="github" url="https://github.com/samshaiza"/>
+            <Social platform="linkedin" url="https://www.linkedin.com/in/samanshaiza/"/>
+            <Social platform="insta" url="https://www.instagram.com/samanshaiza"/>
+            <Social platform="twitter" url="https://www.twitter.com/samanshaiza"/>
+        </div>
+    </div>
 </footer>
 
 <script>
-    document.querySelector('#copyright').textContent = new Date().getFullYear().toString();
+    document.querySelector('#copyright')!.textContent = new Date().getFullYear().toString();
 </script>

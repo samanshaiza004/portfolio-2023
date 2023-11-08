@@ -5,19 +5,19 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 <header class="lg:flex p-5 gap-5">
     <Astronav>
         <div class="flex w-full justify-between">
-            <a>Saman Shaiza</a>
+            <a class="opacity-70 hover:opacity-100 transition duration-100" href = "mailto: samanshaiza@yahoo.com">samanshaiza@yahoo.com</a>
             <div class="block lg:hidden">
                 <MenuIcon class="w-4 h-4 text-white" />
             </div>
             
         </div>
-      <MenuItems class="hidden lg:flex">
-        <ul class="flex flex-col lg:flex-row lg:gap-5">
-          <li><a href="/">home</a></li>
-          <li><a href="/blog">blog</a></li>
-          <li><a href="/projects">projects</a></li>
-          <li><a href="">music</a></li>
-        </ul>
-      </MenuItems>
+        <MenuItems class="hidden lg:flex">
+            <ul class="flex flex-col lg:flex-row lg:gap-5">
+                <li><a class="opacity-70 hover:opacity-100 transition duration-100" href="/">home</a></li>
+                <li><a class="opacity-70 hover:opacity-100 transition duration-100" href="/blog">blog</a></li>
+                <li><a class="opacity-70 hover:opacity-100 transition duration-100" href="/projects">projects</a></li>
+                <li><a class="opacity-70 hover:opacity-100 transition duration-100" href="">music</a></li>
+            </ul>
+        </MenuItems>
     </Astronav>
 </header>
