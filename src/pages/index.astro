@@ -20,13 +20,23 @@ import ProjectCard from "../components/ProjectCard.astro";
 		</div>
 	</section>
 	<section id="about-me" class="min-h-screen">
-		<h1 class="text-4xl my-4">About me</h1>
+		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">About me</h1>
 		<div class="md:grid md:grid-cols-3 gap-2 flex flex-col items-center justify-center">
 			<p class="col-span-2">Hello! My name is Saman and I love creating things on the internet. My interest in web development started back in 2020 when some family members thought I could make websites. I was barely able to put together a working website, but the experience led me to discover my new passion: web development. </p>
 			<div class="space-y-2 ">
-				<img class="w-full h-auto object-cover" src="/images/portrait1.jpeg" alt="my smiling face"/>
-				<img class="w-full h-auto object-cover" src="/images/portrait2.jpeg" alt="my thinking face"/>
-				<img class="w-full h-auto object-cover" src="/images/portrait3.jpeg" alt="me when there is a bug"/>
+				
+				<div class="group">
+					<img class="w-full h-auto object-cover" src="/images/portrait1.jpeg" alt="my smiling face"/>
+					<p class="absolute text-center -mt-5 opacity-0 group-hover:opacity-80">my smiling face</p>
+				</div>
+				<div class="group">
+					<img class="w-full h-auto object-cover" src="/images/portrait2.jpeg" alt="my thinking face"/>
+					<p class="absolute text-center -mt-5 opacity-0 group-hover:opacity-80">my thinking face</p>
+				</div>
+				<div class="group">
+					<img class="w-full h-auto object-cover" src="/images/portrait3.jpeg" alt="my thinking face"/>
+					<p class="absolute text-center -mt-5 opacity-0 group-hover:opacity-80">mfw theres a bug in da code</p>
+				</div>
 			</div>
 		</div>
 		
@@ -35,8 +45,8 @@ import ProjectCard from "../components/ProjectCard.astro";
 			<a href="#projects">check some of my <strong>projects!</strong></a>	
 		</div>
 	</section>
-	<section id="projects" class="mt-12 mb-32">
-		<h1 class="text-4xl my-4">Selected projects</h1>
+	<section id="projects" class="mt-12 mb-16">
+		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Selected projects</h1>
 		<ProjectCard title="Project One" description="Lorem ipsum penis poopis" imgUrl="/images/project1.jpg" />
 		<ProjectCard title="Project Two" description="Lorem Poopum mcfarty farteson" imgUrl="/images/project1.jpg" />
 	</section>
