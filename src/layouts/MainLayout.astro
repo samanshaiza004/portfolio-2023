@@ -6,7 +6,7 @@ const {title, seoTitle, seoDesc} = Astro.props;
 ---
 <html lang="en">
 <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
-<body class="mx-auto flex flex-col min-h-screen max-w-[872] md:w-6/12 bg-slate-900 text-white">
+<body class="mx-auto flex flex-col min-h-screen max-w-[872] md:w-6/12 bg-cover bg-gradient-to-br from-slate-900 to-slate-800 text-white">
     <Nav />
 
         <slot />

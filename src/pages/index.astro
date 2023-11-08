@@ -1,19 +1,26 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <MainLayout title={"Saman Shaiza"} seoTitle="Saman Shaiza's portfolio website" seoDesc="Frontend Developer">
 	
-	<h1 class="pb-3 font-bold text-4xl md:text-5xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Hi, my name is Saman</h1>
+	<h1 class="pb-3 font-bold text-4xl md:text-5xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Hi, my name is Saman...</h1>
 
 	<div id="typed-strings">
-		<p>I am a <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-teal-500 shadow-md [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Web Developer</strong> with a year of experience...</p>
-		<p>I made this <em>website</em> with <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 shadow-md [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Astro</strong> and <strong class="bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Hygraph</strong>.</p>xxs
+		<p>I am a <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-teal-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Web Developer</strong> with a year of experience...</p>
+		<p>I made this <em>website</em> with <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Astro</strong> and <strong class="bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Hygraph</strong>.</p>xxs
 		<p>Outside of work I make music and learn new technologies.</p>
 	</div>
 	<div class="mt-6">
 		<span id="typed"></span>
 	</div>
+	<section class="mt-12 mb-12">
+		<h1 class="text-4xl my-4">Selected projects</h1>
+		<ProjectCard title="Project One" description="Lorem ipsum penis poopis" imgUrl="../../public/images/project1.jpg" />
+		<ProjectCard title="Project Two" description="Lorem Poopum mcfarty farteson" imgUrl="../../public/images/project1.jpg" />
+	</section>
+	
 </MainLayout>
 
 <style>
