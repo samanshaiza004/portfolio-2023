@@ -1,0 +1,25 @@
+---
+import type { GetStaticPaths } from "astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+    return [{params: { projects: "project1"}, 
+    props: {
+        name: "Project One",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }}]
+}
+
+const { projects } = Astro.params;
+const { name, desc } = Astro.props;
+---
+<MainLayout>
+    <section>
+        <img class="rounded" src=`/images/${projects}.jpg` width="400" height="400"/>
+        <h1 class="font-bold text-6xl mt-6">{name}</h1>
+        <p class="mt-6">
+            {desc}
+        </p>
+    </section>
+    
+</MainLayout>

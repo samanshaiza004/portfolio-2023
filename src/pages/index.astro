@@ -1,16 +1,27 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title={"Saman Shaiza"} seoTitle="Saman Shaiza's portfolio website" seoDesc="Frontend Developer">
+	<div class="flex flex-col gap-20">
+		<h1 class="text-4xl md:text-5xl text-center my-2 shadow-md [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)]">Hi, my name is Saman</h1>
+	</div>
+	<div id="typed-strings">
+		<p>I am a <strong class="shadow-md [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Web Developer</strong> with a year of experience</p>
+		<p>I am currently <em>working</em> with <strong class="shadow-md [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Next Js</strong> and <strong class="shadow-md [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">TypeScript.</strong></p>xxs
+		<p>Outside of work I make music and learn new technologies.</p>
+	</div>
+	<div class="mt-6">
+		<span id="typed"></span>
+	</div>
+</MainLayout>
+
+<script>
+	import Typed from "typed.js";
+	var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+	typeSpeed: 50,
+	loop: true,
+	smartBackspace: false
+  });
+</script>
