@@ -1,14 +1,10 @@
-# Astro Starter Kit: Minimal
+# Saman Shaiza [Portfolio]
 
 ```sh
 npm create astro@latest -- --template minimal
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6fb6cdeb-fe7b-405d-ba2c-73b42045ffca/deploy-status)](https://app.netlify.com/sites/samanshaiza/deploys)
 
 ## 🚀 Project Structure
 
