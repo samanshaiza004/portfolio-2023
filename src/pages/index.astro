@@ -9,7 +9,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 	<section class="min-h-[400px]">
 		<div id="typed-strings">
 			<p>I am a <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-teal-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Web Developer</strong> with a year of experience...</p>
-			<p>I made this <em>website</em> with <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Astro</strong> and <strong class="bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Hygraph</strong>.</p>xxs
+			<p>I made this <em>website</em> with <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Astro</strong> and <strong class="bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to-sky-200 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Tailwind</strong>.</p>s
 			<p>Outside of work I make music and learn programming.</p>
 		</div>
 		<div class="mt-6 mb-6 text-xl">
@@ -22,9 +22,21 @@ import ProjectCard from "../components/ProjectCard.astro";
 	<section id="about-me" class="min-h-screen">
 		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">About me</h1>
 		<div class="md:grid md:grid-cols-3 gap-2 flex flex-col items-center justify-center">
-			<p class="col-span-2">Hello! My name is Saman and I love creating things on the internet. My interest in web development started back in 2020 when some family members thought I could make websites. I was barely able to put together a working website, but the experience led me to discover my new passion: web development. </p>
-			<div class="space-y-2 ">
-				
+			<div class="col-span-2">
+				<p >Hello! My name is Saman and I love creating things on the internet. 
+					My interest in web development started back in 2020 when some family members thought I could make websites. 
+					I was barely able to put together a working website, but the experience led me to discover my new passion of web development. </p>
+				<br />
+				<h3>Some technologies I love working with...</h3>
+				<ul class="marker:text-blue-600 list-disc ps-5 space-y-2 text-md dark:text-gray-400">
+					<li class="space-x-2 mt-1">JavaScript</li>
+					<li class="space-x-2 mt-1">React</li>
+					<li class="space-x-2 mt-1">Next.js</li>
+					<li class="space-x-2 mt-1">Tailwind</li>
+					<li class="space-x-2 mt-1">Node.js</li>
+				</ul>
+			</div>
+			<div class="space-y-2 ">	
 				<div class="group">
 					<img class="w-full h-auto object-cover" src="/images/portrait1.jpeg" alt="my smiling face"/>
 					<p class="absolute text-center -mt-5 opacity-0 group-hover:opacity-80">my smiling face</p>
@@ -47,7 +59,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 	</section>
 	<section id="projects" class="mt-12 mb-16">
 		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Selected projects</h1>
-		<ProjectCard title="Pokemon Memory" description="Pokemon Memory is a Pokemon memory game." imgUrl="/images/pokemon-memory.png" />
+		<ProjectCard url="/posts/pokemon-memory" title="Pokemon Memory" description="Pokemon Memory is a Pokemon memory game." imgUrl="/images/pokemon-memory.png" />
 		<ProjectCard title="Project Two" description="Lorem Poopum mcfarty farteson" imgUrl="/images/project1.jpg" />
 		<ProjectCard title="Project Three" description="Lorem ipsum penis poopum" imgUrl="/images/project1.jpg" />
 	</section>
@@ -57,7 +69,6 @@ import ProjectCard from "../components/ProjectCard.astro";
 <style>
 	.background-animate {
 	  background-size: 200%;
-	  
 	  -webkit-animation: background-pan 3s linear infinite;
 	  -moz-animation: background-pan 3s linear infinite;
 	  animation: background-pan 3s linear infinite;
@@ -74,6 +85,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 </style>
 <script>
 	import Typed from "typed.js";
+	
 	var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
 	typeSpeed: 50,

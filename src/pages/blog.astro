@@ -1,11 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import PostCard from "../components/Blog/PostCard.astro"
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
 
 <MainLayout title="Saman's Blog" seoTitle="Saman Shaiza's Blog, Web Engineer" seoDesc="Saman is a web developer with a year of experience">
     <div class="">
         <h1 class="text-5xl">Posts</h1>
-        <PostCard url="/" title="First Post!!!" />
+        <ul>
+            {
+                allPosts.map((post) => 
+                    <PostCard url={post.url} title={post.frontmatter.title} />
+                )
+            }
+        </ul>
+        
     </div>
 </MainLayout>

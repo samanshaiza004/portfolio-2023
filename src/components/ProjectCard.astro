@@ -1,9 +1,9 @@
 ---
-const {title, description, imgUrl} = Astro.props;
+const {title, description, imgUrl, url} = Astro.props;
 ---
 <div class="border border-white border-opacity-60 hover:border-opacity-80 transition duration-250 rounded-xl mb-4">
     <!-- Card -->
-    <a class="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/projects/project1">
+    <a class="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href={url}>
         <div class="flex-shrink-0 relative w-full rounded-xl overflow-hidden h-[200px] before:absolute before:inset-x-0 before:w-full before:h-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
             <img class="w-full h-full absolute top-0 start-0 object-cover group-hover:scale-105 cursor-pointer transition-transform duration-500 ease-in-out rounded-t-xl" alt="" src={imgUrl}/>
         </div>
