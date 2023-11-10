@@ -3,30 +3,27 @@ const { frontmatter } = Astro.props;
 import MainLayout from "./MainLayout.astro";
 ---
 <MainLayout>
-    <h1 class="my-4 text-4xl font-bold">{frontmatter.title}</h1>
+    <h1 class="my-4 text-6xl font-bold">{frontmatter.title}</h1>
     
     <article class="content">
-        <div class="flex">
-            <p class="text-sm mr-4 text-gray-500">{frontmatter.pubDate.slice(0, 10)}</p>
-            <p><em>{frontmatter.description}</em></p>
+        <p class="pe-6 last:pe-0 last-of-type:before:hidden text-xl before:bg-gray-300 before:rounded-full dark:text-gray-400 dark:before:bg-gray-600"><em>{frontmatter.description}</em></p>
+        <div class="flex items-center mb-2 text-sm">
+            <p class=" text-gray-500 last:pe-0 last-of-type:before:hidden before:bg-gray-300 before:rounded-full dark:text-gray-400 dark:before:bg-gray-600">{frontmatter.pubDate.slice(0, 10)} | {frontmatter.author}</p>
         </div>
         
-        <p>{frontmatter.author}</p>
-        <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
-        <div class="prose prose-invert">
+        <figure>
+            <img class="w-full object-cover rounded-xl" src={frontmatter.image.url} alt={frontmatter.image.alt} />
+            <figcaption class="mt-3 text-sm text-center text-gray-500">{frontmatter.image.alt}</figcaption>
+        </figure>
+        
+        <div class="md:prose-lg lg:prose-xl prose prose-invert mb-32 prose-h1:text-5xl prose-h2:text-4xl">
             <slot />
         </div>
-        
+        <br >
     </article>
     <style>
         .content {
             font-family: 'Roboto Slab', serif;
-        }
-        p {
-            font-size: 16px;
-        }
-        #what-is-pokemon-memory {
-            font-size: 36px;
         }
     </style>
 </MainLayout>

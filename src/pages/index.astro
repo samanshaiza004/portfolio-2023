@@ -4,21 +4,23 @@ import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <MainLayout title={"Saman Shaiza"} seoTitle="Saman Shaiza's portfolio website" seoDesc="Frontend Developer">
+	<div id="intro">
+		<h1 class="pb-3 font-bold text-6xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Hi, my name is Saman...</h1>
+		<section  class="md:min-h-[400px] lg:min-h-[700px]">
+			<div id="typed-strings">
+				<p>I am a <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-teal-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Web Developer</strong> with a year of experience...</p>
+				<p>I made this <em>website</em> with <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Astro</strong> and <strong class="bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to-sky-200 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Tailwind</strong>.</p>s
+				<p>Outside of work I make music and learn programming.</p>
+			</div>
+			<div class="mt-6 mb-6 text-xl">
+				<span id="typed"></span>
+			</div>
+			<div class="flex items-center text-center justify-center mt-64 hover:text-slate-300 transition duration-150">
+				<a href="#about-me"><strong>About me!</strong></a>	
+			</div>
+		</section>
+	</div>
 	
-	<h1 class="pb-3 font-bold text-6xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Hi, my name is Saman...</h1>
-	<section class="min-h-[400px]">
-		<div id="typed-strings">
-			<p>I am a <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-teal-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Web Developer</strong> with a year of experience...</p>
-			<p>I made this <em>website</em> with <strong class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Astro</strong> and <strong class="bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to-sky-200 [text-shadow:_0_0_40px_rgb(255_255_255_/_20%)]">Tailwind</strong>.</p>s
-			<p>Outside of work I make music and learn programming.</p>
-		</div>
-		<div class="mt-6 mb-6 text-xl">
-			<span id="typed"></span>
-		</div>
-		<div class="flex items-center text-center justify-center mt-64">
-			<a href="#about-me"><strong>About me!</strong></a>	
-		</div>
-	</section>
 	<section id="about-me" class="min-h-screen">
 		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">About me</h1>
 		<div class="md:grid md:grid-cols-3 gap-2 flex flex-col items-center justify-center">
@@ -35,6 +37,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 							<li class="space-x-2 mt-1">React</li>
 							<li class="space-x-2 mt-1">Next.js</li>
 							<li class="space-x-2 mt-1">Tailwind</li>
+							<li class="space-x-2 mt-1">Astro</li>
 							<li class="space-x-2 mt-1">Node.js</li>
 						</ul>
 					</div>
@@ -68,15 +71,16 @@ import ProjectCard from "../components/ProjectCard.astro";
 		</div>
 		
 		
-		<div class="flex items-center text-center justify-center mt-6">
+		<div class="flex items-center text-center justify-center mt-6 hover:text-slate-300 transition duration-150">
 			<a href="#projects">check some of my <strong>projects!</strong></a>	
 		</div>
 	</section>
-	<section id="projects" class="mt-12 mb-16">
-		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-2 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Selected projects</h1>
+	<section id="projects" class="mt-12 mb-16 min-h-screen">
+		<h1 class="pb-3 font-bold text-4xl md:text-8xl my-3 [text-shadow:_0_0_40px_rgb(255_255_255_/_10%)] bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-red-200 to-indigo-400 background-animate ">Selected projects</h1>
 		<ProjectCard url="/posts/pokemon-memory" title="Pokemon Memory" description="Pokemon Memory is a Pokemon memory game." imgUrl="/images/pokemon-memory.png" />
-		<ProjectCard title="Project Two" description="Lorem Poopum mcfarty farteson" imgUrl="/images/project1.jpg" />
-		<ProjectCard title="Project Three" description="Lorem ipsum penis poopum" imgUrl="/images/project1.jpg" />
+		<div class="flex items-center text-center justify-center mt-32 hover:text-slate-300 transition duration-150">
+			<a href="#intro">back to the <strong>top!</strong></a>	
+		</div>
 	</section>
 	
 </MainLayout>
