@@ -34,6 +34,12 @@ This game was inspired by one of the [The Odin Project](https://www.theodinproje
 
 I opted to use the Pokemon API to fetch data from. I thought it'd be really cool, though a little impractical, to be able to play with all 1000+ Pokemon.
 
+## What did I learn?
+
+Something I struggled with at first was fetching data. There are probably a _gazillion_ ways to fetch from an API. XMLHttpRequest, jQuery, Fetch API, Axios? Do you want to use async/await or promises? How can I use the useEffect hook appropriately without forsaking my humanity?
+
+It's all so confusing, but, slowly, I've been getting used to the burn.
+
 ## What's next?
 
 I plan on making a simple CRUD app with PostgreSQL and React.
