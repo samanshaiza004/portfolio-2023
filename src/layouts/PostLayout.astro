@@ -3,11 +3,30 @@ const { frontmatter } = Astro.props;
 import MainLayout from "./MainLayout.astro";
 ---
 <MainLayout>
-    <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.pubDate.slice()}</p>
-    <p>Written by: {frontmatter.author}</p>
-    <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
-    <p><em>{frontmatter.description}</em></p>
-    <slot />
-
+    <h1 class="my-4 text-4xl font-bold">{frontmatter.title}</h1>
+    
+    <article class="content">
+        <div class="flex">
+            <p class="text-sm mr-4 text-gray-500">{frontmatter.pubDate.slice(0, 10)}</p>
+            <p><em>{frontmatter.description}</em></p>
+        </div>
+        
+        <p>{frontmatter.author}</p>
+        <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+        <div class="prose prose-invert">
+            <slot />
+        </div>
+        
+    </article>
+    <style>
+        .content {
+            font-family: 'Roboto Slab', serif;
+        }
+        p {
+            font-size: 16px;
+        }
+        #what-is-pokemon-memory {
+            font-size: 36px;
+        }
+    </style>
 </MainLayout>

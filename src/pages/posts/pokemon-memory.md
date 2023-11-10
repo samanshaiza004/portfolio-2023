@@ -5,7 +5,7 @@ pubDate: 2023-11-09
 description: "My first real project. Epic or nah ...?"
 author: "Saman Shaiza"
 image:
-  url: "/images/portrait1.jpeg"
+  url: "/images/pokemon-memory.png"
   alt: "The interface to my memory game."
 tags: ["projects"]
 ---

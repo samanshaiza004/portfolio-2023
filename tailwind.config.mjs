@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bodyBg: "url('src/images/bg.jpg')",
+        bodyBg: "url('/images/bg.jpg')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
