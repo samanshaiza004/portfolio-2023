@@ -24,7 +24,7 @@ The rules are simple!
 
 2. **Win**: select every single Pokemon once without selecting the same Pokemon twice!
 
-Go check it out [here!](https://samshaiza.github.io/pokemon-memory/)
+Go check it out [here!](https://samanshaiza004.github.io/pokemon-memory/)
 
 ## How was it made?
 
